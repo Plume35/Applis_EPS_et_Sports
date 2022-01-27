@@ -1,7 +1,7 @@
 body {
     background-color: #3C5A66;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-   
+  
     
 }
 p.titre {
@@ -21,20 +21,16 @@ div.centre{
     text-align: center;
 }
 div.titre{
-    margin-bottom: -35px;
-    margin-top: 0;
+    margin-bottom: -95px;
+    margin-top: 20px;
     
 }
 .decalage{
-    margin-left: 5%;
+    margin-left: 15%;
+    text-align: left;
+    margin-bottom: 20px;
 }
-div.contenu {
-    background-color: white;
-    margin:0px 10% 80px 10%;
-    padding:50px;
-    box-shadow : 0px 0px 10px rgba(0,0,0.1);
-    min-width: fit-content;
-}
+
 .doubleImageG {
     width: 80%; 
     margin-left: 15%;
@@ -42,6 +38,20 @@ div.contenu {
     box-shadow : 5px 5px 5px rgba(60,90,102,1);
   
 }
+
+div.contenu {
+    background-color: white;
+   
+    box-shadow : 0px 0px 10px rgba(0,0,0.1);
+    text-align: center;
+   
+
+    margin : 60px 5% 80px 5%;
+    padding: 20px 10px 10px 10px;
+    min-width: 100px;
+   
+}
+
 .doubleImageD {
     width: 80%; 
     margin-right: 15%;
@@ -51,7 +61,7 @@ div.contenu {
 }
 .grandeImage{
    width: 60%;
-   margin-left: 15%;
+  
    border-radius:5%;
    box-shadow : 5px 5px 5px rgba(60,90,102,1);
    
@@ -66,8 +76,28 @@ div.separateur{
    margin-left: 15%;
 }
 div.separateurBlanc{
-height: 20px;
+height: 40px;
 }
 .tableau{
     width: 100%;
+}
+
+
+/* Style pour ordinateur    */
+@media only screen and (min-width: 780px) {
+    div.contenu {
+        margin : 60px 10% 80px 10%;
+        padding: 50px 30px 30px 30px;
+        text-align: center;
+  }
+}
+
+/* Style pour très grand écran    */
+@media only screen and (min-width: 1200px) {
+    div.contenu {
+        margin : 60px 10% 80px 10%;
+        padding: 50px 30px 30px 30px;
+        min-width: 350px;
+        text-align: center;
+  }
 }
